@@ -1,29 +1,29 @@
 body {
   font-family: sans-serif;
-  padding: 1rem;
-  background: #fffbe6;
-  color: #333;
+  margin: 20px;
+  background: #f8f9fa;
+  color: #222;
 }
 
 h1 {
-  color: #ff6600;
+  color: #003366;
 }
 
-#feed-list {
+ul {
   list-style: none;
   padding: 0;
 }
 
-.feed-item {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 1rem;
-  margin: 0.5rem 0;
-  border-radius: 8px;
+li {
+  padding: 10px;
+  background: #ffffff;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   cursor: pointer;
   transition: background 0.3s;
 }
 
-.feed-item:hover {
-  background: #ffe0cc;
+li:hover {
+  background: #e6f0ff;
 }
