@@ -1,7 +1,7 @@
 const RSS_URL = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.gazzettaufficiale.it%2Frss%2FSG&api_key=pysut7xpkqmkvufbheptgxgbyd7c46wo0zlfun1e";
 
 // Inserisci qui il tuo endpoint esterno
-const ENDPOINT_URL = "https://tuo-endpoint-esterno.com/api/ricevi_item"; 
+const ENDPOINT_URL = "https://webhook.site/f21cdfbd-ae6f-4718-a1ee-99b162c8e808"; 
 
 async function fetchRSS() {
   const response = await fetch(RSS_URL);
