@@ -2,22 +2,20 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="manifest" href="manifest.json" />
-  <link rel="icon" href="icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icons/icon-192.png" />
   <title>Gazzetta RSS</title>
 </head>
 <body>
-  <h1>Gazzetta Ufficiale</h1>
-  <ul id="feed-list">Caricamento...</ul>
+  <h1>Gazzetta Ufficiale - Notifiche</h1>
+  <ul id="rss-list">Caricamento notizie...</ul>
 
-  <script src="script.js"></script>
+  <script src="app.js"></script>
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(reg => console.log('Service Worker registrato:', reg.scope))
-        .catch(err => console.error('Service Worker errore:', err));
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
     }
   </script>
 </body>
