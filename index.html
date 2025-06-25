@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.png" />
+  <title>Gazzetta RSS</title>
+</head>
+<body>
+  <h1>Gazzetta Ufficiale</h1>
+  <ul id="feed-list">Caricamento...</ul>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('Service Worker registrato:', reg.scope))
+        .catch(err => console.error('Service Worker errore:', err));
+    }
+  </script>
+</body>
+</html>
