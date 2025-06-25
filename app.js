@@ -1,5 +1,5 @@
 const RSS_URL = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.gazzettaufficiale.it%2Frss%2FSG&api_key=pysut7xpkqmkvufbheptgxgbyd7c46wo0zlfun1e";
-const ENDPOINT_URL = "https://<TUO-SITO>.netlify.app/.netlify/functions/salva_item"; // <-- aggiorna con il tuo
+const ENDPOINT_URL = "https://rssgazzetta.netlify.app/.netlify/functions/salva_item";
 
 async function fetchRSS() {
   const res = await fetch(RSS_URL);
